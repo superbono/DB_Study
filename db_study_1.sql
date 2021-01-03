@@ -83,7 +83,6 @@ SELECT * FROM SALGRADE;
 
 SELECT DISTINCT(JOB) FROM EMP;
 
-
 /*
  급여가 2850 이상인 사원의 이름, 급여를 출력하세요.
 */
@@ -91,3 +90,11 @@ SELECT DISTINCT(JOB) FROM EMP;
 SELECT ENAME, SAL
 FROM EMP
 WHERE SAL >= 2850;
+
+/*
+ 급여가 1500이상 2850이하의 범위에 속하는 사원의 이름, 급여를 출력하세요.
+*/
+
+SELECT ENAME, SAL
+FROM EMP
+WHERE SAL BETWEEN 1500 AND 2850;
