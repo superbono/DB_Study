@@ -67,4 +67,27 @@ INSERT INTO SALGRADE VALUES (5, 3001, 9999);
 
 
 
+/*
+ 사원테이블, 부서테이블, 급여테이블을 조회하세요.
+ -> 전체 데이터
+*/
 
+SELECT * FROM EMP;
+SELECT * FROM DEPT;
+SELECT * FROM SALGRADE;
+
+/*
+ 사원테이블에서 직업을 출력하세요.
+ -> 항목이 중복되지 않도록 출력하세요.
+*/
+
+SELECT DISTINCT(JOB) FROM EMP;
+
+
+/*
+ 급여가 2850 이상인 사원의 이름, 급여를 출력하세요.
+*/
+
+SELECT ENAME, SAL
+FROM EMP
+WHERE SAL >= 2850;
