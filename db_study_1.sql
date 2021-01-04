@@ -109,5 +109,11 @@ FROM EMP
 WHERE HIREDATE BETWEEN '1981-02-20' AND '1981-05-01'
 ORDER BY HIREDATE ASC;
 
+/*
+ 10번 및 30번 부서에 속하는 모든 사원 중 급여가 1500을 넘는 사원의 이름 및 급여를 출력하세요.
+ -> 컬럼명을 각각 employee 및 Monthly Salary로 지정하세요.
+*/
 
-
+SELECT ENAME AS "Employee", SAL "Monthly Salary" 
+FROM EMP 
+WHERE DEPTNO IN(10,30) AND SAL>1500;
