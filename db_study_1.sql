@@ -117,3 +117,11 @@ ORDER BY HIREDATE ASC;
 SELECT ENAME AS "Employee", SAL "Monthly Salary" 
 FROM EMP 
 WHERE DEPTNO IN(10,30) AND SAL>1500;
+
+/*
+ 관리자가 없는 모든 사원의 이름 및 직위를 출력하세요.
+*/
+
+select ENAME, JOB 
+FROM EMP 
+WHERE MGR IS NULL;
