@@ -122,6 +122,14 @@ WHERE DEPTNO IN(10,30) AND SAL>1500;
  관리자가 없는 모든 사원의 이름 및 직위를 출력하세요.
 */
 
-select ENAME, JOB 
+SELECT ENAME, JOB 
 FROM EMP 
 WHERE MGR IS NULL;
+
+/*
+ 이름의 세 번째 문자가 A인 모든 사원의 이름을 출력하라.
+*/
+
+SELECT ENAME
+FROM EMP
+WHERE ENAME LIKE '__A%';
