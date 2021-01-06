@@ -127,9 +127,19 @@ FROM EMP
 WHERE MGR IS NULL;
 
 /*
- 이름의 세 번째 문자가 A인 모든 사원의 이름을 출력하라.
+ 이름의 세 번째 문자가 A인 모든 사원의 이름을 출력하세요.
 */
 
 SELECT ENAME
 FROM EMP
 WHERE ENAME LIKE '__A%';
+
+/*
+ 이름에 L이 두 번 들어가며 부서 30에 속해있는 사원의 이름을 출력하세요.
+*/
+
+SELECT ENAME
+FROM EMP
+WHERE ENAME LIKE '%L%L%' AND
+      DEPTNO = 30
+      
