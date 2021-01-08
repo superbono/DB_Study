@@ -151,4 +151,12 @@ WHERE ENAME LIKE '%L%L%' AND
 
 SELECT EMPNO, ENAME, ROUND(SAL+(SAL* 0.15),0) AS "New Salary"
 FROM EMP;
+
+/*
+ 모든 사원의 이름(첫 글자는 대문자로, 나머지 글자는 소문자로 표시) 및 이름 길이를
+ 표시하는 쿼리를 작성하고 컬럼 별칭은 적당히 넣어서 출력하세요.
+*/
+
+SELECT initcap(ENAME) AS "ENAME", LENGTH(ENAME) AS "ENAME_LENG"
+FROM EMP; 
    
