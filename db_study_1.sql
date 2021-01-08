@@ -141,5 +141,14 @@ WHERE ENAME LIKE '__A%';
 SELECT ENAME
 FROM EMP
 WHERE ENAME LIKE '%L%L%' AND
-      DEPTNO = 30
+      DEPTNO = 30;
       
+
+/*
+ 사원번호, 이름, 급여 그리고 15%인상된 급여를 정수로 표시하되 컬럼명을
+ New Salary로 지정하여 출력하세요.   
+*/
+
+SELECT EMPNO, ENAME, ROUND(SAL+(SAL* 0.15),0) AS "New Salary"
+FROM EMP;
+   
