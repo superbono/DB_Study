@@ -159,4 +159,15 @@ FROM EMP;
 
 SELECT initcap(ENAME) AS "ENAME", LENGTH(ENAME) AS "ENAME_LENG"
 FROM EMP; 
-   
+  
+/*
+ 사원의 이름과 커미션을 출력하되, 커미션이 책정되지 않은
+ 사원의 커미션은 'no commission'으로 출력하세요.
+*/ 
+
+SELECT ENAME, NVL(TO_CHAR(COMM),'no commision') AS "COMM"
+FROM EMP
+
+
+
+
