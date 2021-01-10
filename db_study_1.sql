@@ -166,7 +166,7 @@ FROM EMP;
 */ 
 
 SELECT ENAME, NVL(TO_CHAR(COMM),'No Commision') AS "COMM"
-FROM EMP
+FROM EMP;
 
 
 
