@@ -165,7 +165,7 @@ FROM EMP;
  사원의 커미션은 'no commission'으로 출력하세요.
 */ 
 
-SELECT ENAME, NVL(TO_CHAR(COMM),'no commision') AS "COMM"
+SELECT ENAME, NVL(TO_CHAR(COMM),'No Commision') AS "COMM"
 FROM EMP
 
 
