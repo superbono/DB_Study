@@ -168,6 +168,13 @@ FROM EMP;
 SELECT ENAME, NVL(TO_CHAR(COMM),'No Commision') AS "COMM"
 FROM EMP;
 
+/*
+ 모든 사원의 이름,부서번호,부서이름을 표시하는 질의를 작성하세요.(DECODE)
+*/
+
+SELECT ENAME,DEPTNO,
+       DECODE(DEPTNO,10,'ACCOUNTING',20,'RESEARCH',30,'SALES',40,'OPERATIONS') AS DNAME
+FROM EMP;       
 
 
 
