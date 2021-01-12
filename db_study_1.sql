@@ -185,4 +185,12 @@ SELECT E.ENAME,E.DEPTNO,D.DNAME
 FROM EMP E,DEPT D
 WHERE E.DEPTNO = D.DEPTNO AND
       E.DEPTNO = 30;
+/*
+ 30번 부서에 속한 사원들의 모든 직업과 부서위치를 출력하세요.
+ (단, 직업 목록이 중복되지 않게 하라.)
+*/
 
+SELECT DISTINCT E.JOB, D.LOC
+FROM EMP E, DEPT D
+WHERE E.DEPTNO = D.DEPTNO AND
+      E.DEPTNO = 30;
