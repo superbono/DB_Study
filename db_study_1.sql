@@ -194,3 +194,13 @@ SELECT DISTINCT E.JOB, D.LOC
 FROM EMP E, DEPT D
 WHERE E.DEPTNO = D.DEPTNO AND
       E.DEPTNO = 30;
+      
+
+/*
+ 이름에 A가 들어가는 모든 사원의 이름과 부서 이름을 출력하세요.
+*/
+
+SELECT E.ENAME, D.DNAME
+FROM EMP E, DEPT D
+WHERE E.DEPTNO = D.DEPTNO AND
+      E.ENAME LIKE '%A%';      
