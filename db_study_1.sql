@@ -204,3 +204,12 @@ SELECT E.ENAME, D.DNAME
 FROM EMP E, DEPT D
 WHERE E.DEPTNO = D.DEPTNO AND
       E.ENAME LIKE '%A%';      
+      
+/*
+ Dallas에서 근무하는 모든 사원의 이름, 직업, 부서번호 및 부서이름을 출력하세요.
+*/
+
+SELECT E.ENAME, E.JOB, E.DEPTNO, D.DNAME
+FROM EMP E, DEPT D
+WHERE E.DEPTNO = D.DEPTNO AND
+      D.LOC = 'DALLAS';
