@@ -213,3 +213,12 @@ SELECT E.ENAME, E.JOB, E.DEPTNO, D.DNAME
 FROM EMP E, DEPT D
 WHERE E.DEPTNO = D.DEPTNO AND
       D.LOC = 'DALLAS';
+      
+/*
+ 사원이름 및 사원번호, 해당 관리자이름 및 관리자 번호를 출력하되,
+ 각 컬럼명을 employee,emp#,manager,mgr#으로 표시하여 출력하세요.
+*/
+
+SELECT E.ENAME AS "employee", E.EMPNO AS "emp#", M.ENAME AS "manager", M.EMPNO AS "mgr#"
+FROM EMP E, EMP M
+WHERE E.MGR = M.EMPNO   
