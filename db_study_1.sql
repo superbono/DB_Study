@@ -243,3 +243,14 @@ WHERE HIREDATE > (
     FROM EMP
     WHERE ENAME = 'SMITH'
 );
+
+/*
+ 모든 사원의 급여 최고액,최저액,총액 및 평균액을 출력하되
+ 각 컬럼명을 Maximum, Minimum, Sum, Average로 지정하여 출력하세요.
+*/
+
+SELECT MAX(SAL) AS Maximum,
+       MIN(SAL) AS Minimum,
+       SUM(SAL) AS Sum,
+       AVG(SAL) AS Average
+FROM EMP
