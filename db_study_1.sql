@@ -254,3 +254,15 @@ SELECT MAX(SAL) AS Maximum,
        SUM(SAL) AS Sum,
        AVG(SAL) AS Average
 FROM EMP
+
+/*
+ 각 직업별로 급여 최저액.최고액,총액 및 평균액을 출력하세요.
+*/
+
+SELECT JOB,
+       MIN(SAL) AS "최저액",
+       MAX(SAL) AS "최고액",
+       SUM(SAL) AS "총액",
+       AVG(SAL) as "평균액"
+FROM EMP
+GROUP BY JOB;
