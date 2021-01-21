@@ -266,3 +266,11 @@ SELECT JOB,
        AVG(SAL) as "평균액"
 FROM EMP
 GROUP BY JOB;
+
+/*
+ 직업이 동일한 사람 수를 직업과 같이 출력하세요.
+*/
+
+SELECT JOB, COUNT(*)
+FROM EMP
+GROUP BY JOB
