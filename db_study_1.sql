@@ -273,4 +273,12 @@ GROUP BY JOB;
 
 SELECT JOB, COUNT(*)
 FROM EMP
-GROUP BY JOB
+GROUP BY JOB;
+
+/*
+ 사원번호가 7566인 사원의 이름 및 부서번호를 표시하는 출력하세요.
+*/
+
+SELECT ENAME, DEPTNO
+FROM EMP
+WHERE EMPNO = 7566;
