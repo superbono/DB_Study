@@ -282,3 +282,10 @@ GROUP BY JOB;
 SELECT ENAME, DEPTNO
 FROM EMP
 WHERE EMPNO = 7566;
+
+/*
+ 관리자의 수를 출력하되, 관리자 번호가 중복되지 않게하세요. 그리고,
+ 컬럼명을 Number of Manager로 지정하여 출력하세요.
+*/
+
+
