@@ -288,4 +288,6 @@ WHERE EMPNO = 7566;
  컬럼명을 Number of Manager로 지정하여 출력하세요.
 */
 
+SELECT COUNT(DISTINCT MGR) AS "Number of Manager"
+FROM EMP;
 
