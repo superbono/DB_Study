@@ -291,3 +291,12 @@ WHERE EMPNO = 7566;
 SELECT COUNT(DISTINCT MGR) AS "Number of Manager"
 FROM EMP;
 
+/*
+ 최고 급여와 최저 급여의 차액을 출력하세요.
+*/
+
+SELECT MAX(SAL)-MIN(SAL)
+FROM EMP;
+
+
+
