@@ -303,6 +303,12 @@ FROM EMP;
  단, 관리자가 없는 사원 및 최저 급여가 1000 미만인 그룹은 제외시키고 급여를 기준으로 출력 결과를 내림차순으로 정렬하세요.
 */
 
+SELECT MGR AS "관리자 번호", MIN(SAL) AS "최저 급여"
+FROM EMP
+WHERE MGR IS NOT NULL
+GROUP BY MGR
+HAVING MIN(SAL)>=1000
+ORDER BY MIN(SAL) DESC;
 
 
 
