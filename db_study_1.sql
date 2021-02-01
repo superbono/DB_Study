@@ -320,7 +320,10 @@ FROM DEPT D,EMP E
 WHERE D.DEPTNO = E.DEPTNO
 GROUP BY E.DEPTNO,D.DNAME,D.LOC;
 
-
+/*
+ Smith와 동일한 부서에 속한 모든 사원의 이름 및 입사일을 출력하세요.
+ 단, Smith는 제외하고 출력하세요.
+*/
 
 
 
