@@ -325,6 +325,8 @@ GROUP BY E.DEPTNO,D.DNAME,D.LOC;
  단, Smith는 제외하고 출력하세요.
 */
 
+SELECT *
+FROM EMP
 
 
 
