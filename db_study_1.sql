@@ -339,7 +339,8 @@ WHERE ENAME != 'SMITH' AND
  표시하는 질의를 작성하고 급여를 기준으로 결과를 내림차순으로 정렬하세요.
 */
 
-
+SELECT *
+FROM EMP
 
 
 
