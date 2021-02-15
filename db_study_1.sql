@@ -339,6 +339,7 @@ WHERE ENAME != 'SMITH' AND
  표시하는 질의를 작성하고 급여를 기준으로 결과를 내림차순으로 정렬하세요.
 */
 
+-- 전체 직원테이블의 사원번호,이름,급여 출력
 SELECT EMPNO,ENAME,SAL
 FROM EMP
 ORDER BY SAL DESC;
